@@ -1,0 +1,245 @@
+.cart-container{
+    border-top: 2px solid $color1;
+    width: 100%;
+    background-image: url("../../public/madera.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+    .boton-atras{
+        display: flex;
+        align-items: center;
+        margin-left: 5vw;
+        margin-top: 3vw;
+        width: fit-content;
+        cursor: pointer;
+        &:hover{
+            transform: scale(1.2);
+            transition: .2s;
+        }
+        p{
+            font-size: 2.5vw;
+            color: $color1;
+            @include screen_720{
+                font-size: 5vw;
+            }
+        }
+    }
+    .cart-title{
+        font-size: 3.5vw;
+        letter-spacing: 2px;
+        text-align: center;
+        color: $color1;
+        margin-top: 6vw;
+        font-family: 'Rubik Dirt', cursive;
+
+
+        margin-bottom: 4vw;
+        @include screen_720{
+            font-size: 6.5vw;
+        }
+        @include screen_450{
+            font-size: 7.5vw;
+        }
+    }
+
+    .cart-container2{
+        background-color: #fac710c4;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+        margin-top: 2vw;
+        margin-bottom: 4vw;
+        width: 100%;
+        .cart-card{
+            display: flex;
+            font-size: 2.3vw;
+            justify-content: center;
+            align-items: center;
+            padding: .5vw;
+            margin: 1vw;
+            background-color: #d9cda1;
+            @include screen_520{
+                flex-direction: column;
+                margin:2vw;
+            }
+            h2{
+                max-width: 45%;
+                min-width: 45%;
+                text-align: start;
+                font-family: 'Rubik Dirt', cursive;
+
+
+                span{
+                    font-size: 1.8vw;
+                    @include screen_820{
+                        font-size: 1.9vw;
+                    }
+                    @include screen_620{
+                        font-size: 2.1vw;
+                    }
+                    @include screen_520{
+                        font-size: 3vw;
+                    }
+                    @include screen_380{
+                        font-size: 4.5vw;
+                    }
+                }
+                @include screen_820{
+                    max-width: 42%;
+                    min-width: 42%;
+                    font-size: 3.3vw;
+                }
+                @include screen_620{
+                    font-size: 4vw;
+                }
+                @include screen_520{
+                    max-width: 100%;
+                    min-width: 100%;
+                    text-align: center;
+                    font-size: 6vw;
+                    margin-top: 1vw;
+                }
+                @include screen_380{
+                    font-size: 8vw;
+                }
+            }
+            .info-card{
+                display: flex;
+                width: 55%;
+                align-items: center;
+                justify-content: space-between;
+                @include screen_820{
+                    max-width: 55%;
+                    min-width: 55%;
+                }
+                @include screen_520{
+                    max-width: 100%;
+                    min-width: 100%;
+                    margin-top: 2vw;
+                    margin-bottom: 2vw;
+                }
+                @include screen_380{
+                    justify-content: space-around;
+                    margin-top:4vw;
+                }
+                span{
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                    img{
+                        width: 3.6vw !important;
+                        height: 3.8vw !important;
+                        cursor: pointer;
+                        @include screen_820{
+                            width: 4.2vw !important;
+                            height: 4.4vw !important;
+                        }
+                        @include screen_520{
+                            width: 7vw !important;
+                            height: 7vw !important;
+                        }
+                        @include screen_380{
+                            width: 7.5vw !important;
+                            height: 8vw !important;
+                        }
+                    }
+                }
+                .precio{
+                    max-width: 30%;
+                    min-width: 30%;
+                    text-align: center;
+                    @include screen_820{
+                        max-width: 25%;
+                        min-width: 25%;
+                        font-size: 3vw;
+                    }
+                    @include screen_520{
+                        font-size: 4.5vw;
+                        max-width: 25%;
+                        min-width: 25%;
+                    }
+                    @include screen_380{
+                        font-size: 6vw;
+                    }
+                }
+                h3{
+                    max-width: 30%;
+                    min-width: 30%;
+                    text-align: center;
+                    @include screen_820{
+                        max-width: 28%;
+                        min-width: 28%;
+                    }
+                    @include screen_520{
+                        font-size: 4.5vw;
+                        max-width: 25%;
+                        min-width: 25%;
+                    }
+                    @include screen_380{
+                        font-size: 5.5vw;
+                        max-width: 28%;
+                        min-width: 28%;
+                    }
+                }
+                .adicionales{
+                    max-width: 25%;
+                    min-width: 25%;
+                    background-color: $color1;
+                    border: 2px solid black;
+                    border-radius: 1vw;
+                    padding: .5vw 1vw;
+                    font-size: 1.5vw;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: black;
+                        color: $color1;
+                    }
+                    @include screen_820{
+                        max-width: 35%;
+                        min-width: 35%;
+                        font-size: 2vw;
+                        margin: .5vw 0vw;
+                    }
+                    @include screen_520{
+                        font-size: 3.5vw;
+                        max-width: 30%;
+                        min-width: 30%;
+                    }
+                    @include screen_380{
+                        font-size: 4vw;
+                        max-width: 32%;
+                        min-width: 32%;
+                    }
+                }
+            }
+        }
+        .total{
+            font-size: 2vw;
+            text-align: end;
+            margin-right: 2vw;
+            @include screen_720{
+                margin-top: 2vw;
+                font-size: 3vw;
+            }
+            @include screen_520{
+                font-size: 4.5vw;
+            }
+            @include screen_450{
+                font-size: 5vw;
+            }
+            @include screen_380{
+                font-size: 5.5vw;
+            }
+        }
+    }
+}
+.noHayProductos{
+    margin-top: 5vw;
+    text-align: center;
+    font-size: 3vw;
+    color: $color1;
+    margin-bottom: 15vw;
+    @include screen_470{
+        font-size: 6.5vw;
+        margin-bottom: 30vw;
+    }
+}

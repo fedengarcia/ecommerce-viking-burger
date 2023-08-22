@@ -1,0 +1,64 @@
+.dashboard-container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    flex-direction: column;
+    background-color: #403C3C;
+    // background-size: cover;
+    // backdrop-filter: blur(2px);
+
+
+    .dashboard-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 8vh;
+
+        h1, h2{
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+            font-size: 4vw;
+            color: #eabe1f;
+            text-decoration: none;
+            background-color: transparent;
+        }
+    }
+
+    h3{
+        margin-top: 1em;
+        color: $color1;
+        margin-bottom: 0.5em;
+        font-size: 3em;
+        width: 100%;
+        text-align: center;
+        padding: 0.5em;
+        border-top: 1px solid $color1;
+        border-bottom: 1px solid $color1;
+    }
+
+
+    #navDash{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        a{
+            margin-right: 1em;
+            font-size: 3em;
+            text-align: center;
+            min-width: 4em;
+            cursor: pointer;
+            color:black;
+            font-weight: 600;
+            transition: all 0.2s ease;
+
+            &:hover{
+                color: $color1;
+                border-bottom: 1px solid $color1;
+            }
+        }
+    }
+
+}

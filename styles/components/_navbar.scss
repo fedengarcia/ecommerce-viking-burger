@@ -1,0 +1,174 @@
+.navbar{
+    width: 100%;
+    display: flex;
+    margin-top: 4vw;
+    flex-direction: column;
+    .navbar-desktop{
+        
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        margin-bottom: 3em;
+        width: 100%;
+        @include screen_580{
+            display: none;
+        }
+        li{
+            font-size: 2.5vw;
+            color: $color1;
+            cursor: pointer;
+            @include screen_768{
+                font-size: 3.5vw;
+            }
+            &:hover{
+                transform: scale(1.2);
+                transition: 1s;
+                text-shadow: 10px 10px 10px black;
+            }
+        }
+        .green{
+            color: #B6EA69;
+        }
+    }
+    .nav-promo{
+        width: fit-content;
+        margin-left: 6vw;
+        margin-top: -1vw;
+        margin-bottom: 2vw;
+        font-size: 2.5vw;
+        color: $color1;
+        cursor: pointer;
+        @include screen_768{
+            font-size: 3.5vw;
+            margin-left: 4vw;
+        }
+        @include screen_580{
+            display: none;
+        }
+        &:hover{
+            transform: scale(1.2);
+            transition: 1s;
+            text-shadow: 10px 10px 10px black;
+        }
+    }
+
+    .navbar-mobile{
+        display: none;
+        width: fit-content;
+        margin: auto;
+        color: $color1;
+        @include screen_580{
+            display: flex;
+        }
+        @include screen_450{
+            margin-top: 8vw;
+        }
+        @include screen_320{
+            margin-top: 10vw;
+        }
+        .menuDespegable{
+            width: 100%;
+            div{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                p{
+                    font-size: 5vw;
+                    font-family: 'Rubik Dirt', cursive;
+
+
+                    @include screen_450{
+                        font-size: 7vw;
+                    }
+                    @include screen_320{
+                        font-size: 8vw;
+                    }
+                }
+                span{
+                    @include screen_450{
+                        width: 9vw;
+                        height: 9vw;
+                    }
+                }
+            }
+            ul{
+                margin-top: 2vw;
+                li{
+                    font-size: 4.5vw;
+                    text-align: center;
+                    letter-spacing: .5vw;
+                    padding: 1.5vw;
+                    @include screen_450{
+                        font-size: 5vw;
+                        padding: 2vw;
+                    }
+                    @include screen_320{
+                        font-size: 6.5vw;
+                    }
+                }
+            }
+        }
+        .green{
+            color: #B6EA69;
+        }
+        .cartWidget{
+            position: absolute;
+            right: 12vw;
+            @include screen_470{
+                right: 8vw;
+                margin-top: -2vw;
+            }
+            @include screen_450{
+                margin-top: -1vw;
+            }
+        }
+    }
+
+// ------------------------------------------------------------------------------------------------------------------------------------------
+
+    span{
+        svg{
+            height: 5vw !important;
+            width: 5vw !important;
+            margin-top: -1vw;
+            @include screen_768{
+                height: 7vw !important;
+                width: 7vw !important;
+            }
+            @include screen_470{
+                height: 11vw !important;
+                width: 11vw !important;
+            }
+            @include screen_450{
+                height: 12vw !important;
+                width: 12vw !important;
+                margin-top: -2.5vw;
+            }
+            @include screen_320{
+                height: 13vw !important;
+                width: 13vw !important;
+            }
+        }
+        span{
+            font-size: 1.8vw;
+            background-color: transparent;
+            color: $color1;
+            font-weight: 600;
+            @include screen_768{
+                font-size: 2.8vw;
+            }
+            @include screen_470{
+                font-size: 4vw;
+                padding-left: 3vw;
+            }
+            @include screen_450{
+                padding-left: 3vw;
+            }
+            @include screen_320{
+                font-size: 5vw;
+                padding-left: 5vw;
+            }
+        }
+    }
+}

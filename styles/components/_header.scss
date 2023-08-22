@@ -1,0 +1,112 @@
+@keyframes pendulo{
+    0%{
+        transform: rotateZ(-10deg);
+    }
+    50%{
+        transform: rotateZ(10deg);
+    }
+    100%{
+        transform: rotateZ(-10deg);
+    }
+}
+@keyframes tituloSombra{
+	0%{
+		color: $color1;
+        text-shadow: .8vw .8vw .8vw black;
+	}
+	50%{ 
+        color: black;
+        text-shadow: .8vw .8vw .8vw#E3B237;
+	}
+	100%{
+		color: $color1;
+        text-shadow: .8vw .8vw .8vw black;
+	}
+}
+
+.header-container{
+    --opacidad-negro: 0.5;
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))),  url("../../public/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 100%;
+    padding-top: 1vw;
+    display: flex;
+    flex-direction: column;
+    @include screen_450{
+        flex-direction: column;
+        align-items: center;
+    }
+    .headertitle{
+        display: flex;
+        @include screen_450{
+            display: block;
+            .logo{
+                margin: auto;
+                width: 50%;
+            }
+        }
+    }
+    .logo{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        animation-name: pendulo;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        @include screen_450{
+            width: 80%;
+        }
+        span{
+            max-width: none !important;
+            height: 18vw !important;
+            width: 18vw !important;
+            @include screen_768{
+                width: 22vw !important;
+                height: 22vw !important;
+            }
+            @include screen_450{
+                width: 40vw !important;
+                height: 40vw !important;
+            }
+            @include screen_320{
+                width: 50vw !important;
+                height: 50vw !important;
+            }
+        }
+    }
+    .titulo{
+        width: 70%;
+        display: flex;
+        align-items: center;
+        font-size: 3vw;
+        @include screen_768{
+            width: 80%;
+            font-size: 3.5vw;
+        }
+        @include screen_450{
+            width: 100%;
+            justify-content: center;
+        }
+        h1{
+            font-family: 'Rubik Dirt', cursive;
+
+
+            color: $color1;
+            letter-spacing: 2px;
+            animation-name: tituloSombra;
+            animation-iteration-count: infinite;
+            animation-duration: 7s;
+            text-shadow: 10px 10px 10px#E3B237;
+            @include screen_450{
+                text-align: center;
+                font-size: 12vw;
+            }
+            @include screen_320{
+                font-size: 15vw;
+            }
+        }
+    }
+}

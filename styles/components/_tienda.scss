@@ -1,0 +1,75 @@
+.tienda-container{
+    background-image: url("../../public/madera.png");
+        background-size: contain;
+        background-position: center;
+        
+    // margin-top: 3vw;
+    padding-top: 2vw;
+    border-top: 2px solid $color1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    min-height: 50vh;
+    width: 100%;
+    flex-wrap: wrap;
+    padding-bottom: 5vw;
+    @include screen_820{
+        padding-bottom: 8vw;
+    }
+    @include screen_580{
+        padding-bottom: 12vw;
+    }
+    @include screen_450{
+        padding-bottom: 14vw;
+    }
+    @include screen_350{
+        padding-bottom: 16vw;
+    }
+    .typeMenu{
+        width: fit-content;
+        font-size: 3.5vw;
+        padding: .5vw 5vw;
+        border-radius: 2vw;
+        margin-bottom: 2vw;
+        letter-spacing: 2px;
+        text-align: center;
+        color:black !important;
+        @include screen_768{
+            font-size: 5vw;
+        }
+        @include screen_450{
+            font-size: 7vw;
+            margin: 5vw 0vw;
+        }
+    }
+   .texto-tienda{
+    color: $color1;
+    font-size: 1.6rem;
+    text-shadow: 2px 2px 5px black;
+    text-align: center;
+    @include screen_620{
+        font-size: 1.4rem;
+    }
+    @include screen_450{
+        font-size: 5vw;
+        padding: 0vw 3vw;
+    }
+    @include screen_350{
+        font-size: 6vw;
+    }
+   }
+
+    .cards-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        min-height: 50vh;
+        width: 100%;
+        flex-wrap: wrap;
+        @include screen_450{
+            width: 98%;
+        }
+    }
+}

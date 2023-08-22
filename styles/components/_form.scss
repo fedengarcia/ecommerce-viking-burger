@@ -1,0 +1,357 @@
+.form-container{
+    background-color: #fac710c4;
+    padding-top: 4vw;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 5vw;
+    margin-bottom: 5vw;
+    
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2vw;
+        .form-datos{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            padding: 2vw;
+            justify-content: center;
+            margin-top: 2vw;
+            @include screen_580{
+                width: 70%;
+            }
+            @include screen_350{
+                width: 85%;
+            }
+            .input-span{
+                margin: .5vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .ej-num{
+                    color: black;
+                    font-size: 1.8vw;
+                    @include screen_720{
+                        font-size: 2.2vw;
+                        width: 100%;
+                    }
+                    @include screen_580{
+                        font-size: 3vw;
+                    }
+                    @include screen_450{
+                        font-size: 3.8vw;
+                    }
+                    @include screen_350{
+                        font-size: 4.2vw;
+                        margin-bottom: 8vw;
+                    }
+                }
+            }
+            input{
+                padding: .5vw;
+                font-size: 1.5vw;
+                width: 60%;
+                @include screen_820{
+                    width: 80%;
+                    font-size: 2.2vw;
+                }
+                @include screen_720{
+                    font-size: 2.5vw;
+                    width: 90%;
+                }
+                @include screen_580{
+                    font-size: 3.5vw;
+                    width: 100%;
+                }
+                @include screen_450{
+                    font-size: 4vw;
+                    margin-top: 2vw; 
+                }
+                @include screen_350{
+                    font-size: 5vw;
+                    margin-top: 3vw;
+                }
+            }
+        }
+        .form-pago{
+            width: 50%;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            @include screen_580{
+                width: 70%;
+            }
+            @include screen_450{
+                width: 80%;
+            }
+            @include screen_350{
+                width: 85%;
+            }
+            input{
+                margin-right: 1vw;
+                @include screen_820{
+                    margin-right: 2vw;
+                }
+                @include screen_450{
+                    margin-right: 3vw;
+                }
+            }
+            label{
+                font-size: 2vw;
+                padding-top: 1vw;
+                @include screen_820{
+                    font-size: 2.8vw;
+                }
+                @include screen_580{
+                    font-size: 3.5vw;
+                }
+                @include screen_450{
+                    font-size: 4.5vw;
+                }
+                @include screen_350{
+                    font-size: 5vw;
+                }
+            }
+            .pago-title{
+                margin-top: 2vw;
+                font-size: 2vw;
+                @include screen_820{
+                    font-size: 2.5vw;
+                }
+                @include screen_580{
+                    font-size: 3.5vw;
+                }
+                @include screen_450{
+                    font-size: 4.5vw;
+                    margin-top: 2vw;
+                }
+                @include screen_350{
+                    font-size: 5vw;
+                    margin-top: 4vw;
+                }
+            }
+            select{
+                font-size: 1.5vw;
+                margin-top: 1vw;
+                @include screen_720{
+                    font-size: 2.5vw;
+                }
+                @include screen_580{
+                    font-size: 3.2vw;
+                }
+                @include screen_450{
+                    font-size: 4.5vw;
+                }
+            }
+            option{
+                width: 20vw;
+                font-size: 1.5vw;
+                text-align: center;
+                @include screen_720{
+                    font-size: 2.5vw;
+                }
+                @include screen_580{
+                    font-size: 3.2vw;
+                }
+                @include screen_450{
+                    font-size: 4.5vw;       
+                }
+            }
+        }
+        span{
+            color: red;
+            width: 60%;
+            text-align: center;
+            font-size: 1.5vw;
+            @include screen_820{
+                font-size: 2vw;
+            }
+            @include screen_720{
+                font-size: 2.5vw;
+            }
+            @include screen_580{
+                font-size: 2.8vw; 
+            }
+            @include screen_450{
+                font-size: 3.5vw;
+            }
+            @include screen_350{
+                font-size: 4.5vw;
+            }
+        }
+        .numero{
+            justify-content: center;
+        }
+        .input-span-number1{
+            width: 40%;
+            @include screen_820{
+                width: 50%;
+            }
+            @include screen_580{
+                width: 100%;
+            }
+            @include screen_450{
+                width: 120%;
+            }
+            input{
+                width: 80%;
+                margin-right: -2vw;
+                @include screen_450{
+                    width: 85%;
+                }
+            }
+            span{
+                margin-right: -2vw ;
+            }
+        }
+        .input-span-number2{
+            width: 40%;
+            @include screen_820{
+                width: 50%;
+            }
+            @include screen_580{
+                width: 100%;
+            }
+            @include screen_450{
+                width: 120%;
+            }
+            input{
+                width: 80%;
+                margin-left: -2vw;
+                @include screen_450{
+                    width: 85%;
+                }
+            }
+            span{
+                margin-left: -2vw ;
+            }
+        }
+    }
+    .lista-ul{
+        width: 80%;
+        margin: auto;
+        padding: .5vw;
+        border: 2px solid black;
+        @include screen_820{
+            width: 60%;
+        }
+        @include screen_720{
+            width: 65%;
+        }
+        @include screen_580{
+            width: 75%;            
+        }
+        @include screen_450{
+            width: 90%;
+        }
+        li{
+            padding: .5vw;
+            font-size: 1.5vw;
+            @include screen_820{
+                font-size: 2.2vw;
+            }
+            @include screen_720{
+                font-size: 2.5vw;
+            }
+            @include screen_580{
+                font-size: 3.2vw;
+                padding: 1vw;
+            }
+            @include screen_450{
+                font-size: 4vw;
+            }
+            @include screen_350{
+                font-size: 5vw;
+            }
+        }
+    }
+    .total{
+        font-size: 4vw;
+        text-align: end;
+        margin-right: 3vw;
+        margin-top: 2vw;
+        @include screen_720{
+            font-size: 5.5vw;
+            margin-top: 5vw;
+            margin-bottom: 6vw;
+        }
+        @include screen_450{
+            font-size: 7vw;
+            margin-top: 8vw;
+            margin-bottom: 8vw;
+        }
+        @include screen_380{
+            font-size: 8.5vw;
+            margin-top: 9vw;
+            margin-bottom: 9vw;
+        }
+    }
+    .total-MP{
+        font-size: 2vw;
+        margin-bottom: -2vw;
+        @include screen_720{
+            font-size: 3.5vw;
+            margin-top: 5vw;
+            margin-bottom: -4vw;
+        }
+        @include screen_450{
+            font-size: 5vw;
+            margin-top: 8vw;
+            margin-bottom: -8vw;
+        }
+        @include screen_380{
+            font-size: 6.5vw;
+            margin-top: 9vw;
+            margin-bottom: -9vw;
+        }
+    }
+}
+.boton-validar{
+    border-color: black;
+    border-radius: 10em;
+    background-color: black;
+    color: $color1;
+    padding: 1vw;
+    font-size: 1.5vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 2vw;
+    border: none;
+    border: 2px solid transparent;
+    transition: all 0.2 ease;
+    
+
+    &:hover{
+        background-color: $color1;
+        color: black;
+        border: 2px solid black;
+    }
+    @include screen_820{
+        font-size: 2vw;
+        padding: 2vw;
+    }
+    @include screen_580{
+        padding: 2.5vw;
+        font-size: 3vw;
+    }
+    @include screen_350{
+        font-size: 4.5vw;
+    }
+}
+.boton-validar-disabled{
+
+    background-color: grey;
+    border: none;
+    &:hover{
+        background-color: grey;
+        color: $color1;
+        border: none;
+    }
+}

@@ -1,0 +1,105 @@
+.dashboard-ordenes{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;  
+    min-height: 100vh;
+
+    .ordenes-container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 1em;
+
+        div{
+            .css-1t6e9jv-MuiCardActions-root{
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                button{
+                    margin: .5vw;
+                    font-size: 1.1vw;
+                }
+            }
+        }
+        .orden-container{
+            margin: 1em;
+            // width: 100% !important;
+            background-color: rgb(234, 190, 31);
+            border: 2px solid black;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+
+            button{
+                border-color: black;
+                padding: 0.5em;
+                // font-size: 1em;
+                border-radius: 5em;
+                background-color: black;
+                color: $color1;
+                transition: all 0.2s ease;
+                &:hover{
+                    cursor: pointer;
+                    color: black;
+                    background-color: $color1;
+                    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+                }
+                &:hover a{
+                    color: black;
+                }
+            }
+            a{
+                color: $color1;
+                text-decoration: none;
+            }
+
+
+
+        }
+        .detalles-info{
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            background-color: rgb(234, 190, 31);
+            border-radius: 1em;
+            border-color: black;
+            .ul-info{
+                margin: 1em;
+                h6{
+                    margin: 0.2em;
+                }
+            }
+            
+            .ul-items{
+                margin: 1em;
+                max-height: 20vw;
+                overflow-y: scroll;
+                &::-webkit-scrollbar {
+                    width: 5px;
+                }
+                &::-webkit-scrollbar-thumb {
+                    background: black;
+                }
+                h6{
+                    margin: 0.2em;
+                }
+            }
+
+            button{
+                margin: 1em 0 0 1em;
+                border-color: black;
+                padding: 0.5em 1em;
+                font-size: 1em;
+                border-radius: 5em;
+                background-color: black;
+                color: $color1;
+                transition: all 0.2s ease;
+                &:hover{
+                    cursor: pointer;
+                    color: black;
+                    background-color: $color1;
+                    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,91 @@
+.cart-adicionales{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0,0.5);
+    position: fixed;
+    top: 0;
+    z-index: 30;
+    .container{
+        width: 50%;
+        background-color: $color1;
+        margin: auto;
+        margin-top: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        @include screen_820{
+            width: 60%;
+        }
+        @include screen_620{
+            width: 80%;
+        }
+        @include screen_400{
+            width: 90%;
+        }
+        .atras{
+            margin-left: 2.5vw;
+            margin-bottom: 1vw;
+            margin-top: 2vw;
+            font-size: 2vw;
+            cursor: pointer;
+            width: fit-content;
+            &:hover{
+                transform: scale(1.2);
+            }
+            @include screen_950 {
+                font-size: 3vw;
+                margin-bottom: 2vw;
+            }
+            @include screen_720{
+                font-size: 4.5vw;
+            }
+            @include screen_520{
+                font-size: 5vw;
+            }
+            @include screen_380{
+                font-size: 7vw;
+                margin-bottom: 5vw;
+            }
+        }
+        .adicionales{
+            width: 90%;
+            min-height: 10vh;
+            height: 50vh;
+            margin-bottom: 3vw;
+            overflow-y: scroll;
+            border: 2px solid black;
+            font-size: 2vw;
+            &::-webkit-scrollbar-thumb {
+                background: black ;
+            }
+            &::-webkit-scrollbar {
+                width: 3px;
+            }
+            @include screen_820{
+                min-height: 20vh;
+                height: 60vh;
+            }
+            @include screen_620{
+                min-height: 30vh;
+                height: 65vh;
+            }
+            p{
+                margin-top: 1vw;
+                text-align: center;
+                @include screen_820{
+                    font-size: 2.8vw;
+                }
+                @include screen_620{
+                    font-size: 3.8vw;
+                    margin-top: 1.5vw;
+                    margin-bottom: 1vw;
+                }
+                @include screen_400{
+                    font-size: 5vw;
+                    margin-top: 2vw;
+                }
+            }
+        }
+    }
+}

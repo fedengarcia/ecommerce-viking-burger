@@ -1,0 +1,84 @@
+ 
+  .logeo-block{
+    width: 100vw;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    // z-index: 15;
+  }
+
+  .logeo-container{
+    width: auto;
+    height: auto;
+    margin: auto;
+    width: 40%;
+    --opacidad-negro: 0.3;
+    background-color: #403C3C;
+    border-radius: 2em;
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    
+
+    .loguin_input{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: column;
+      // width: 50%;
+
+      label{
+        background-color: transparent;
+        margin: 1em 0.5em 0 0.5em;
+        font-size: 2em;
+        color: $color1;
+      }
+
+      input{
+        width: 50%;
+        background-color: #c7e5e3;
+        border: 1px solid black;
+        font-size: 1.5em;
+        padding-left: 1em;
+        border-radius: 5em;
+        margin-top: 1em;
+
+        &:focus{
+          outline: none !important;
+
+        }
+      }
+    }
+    
+    .container-logeo-button{
+      display: flex;
+      width: 70%;
+      background-color: transparent;
+      margin: auto;
+      justify-content: center;
+
+      button{
+        border-color: 1px solid black;
+
+            margin: 1em;
+            padding: 0.5em;
+            border-radius: 2em;
+            font-size: 1.6em;
+            text-align: center;
+            min-width: 8em;
+            cursor: pointer;
+            background-color: black;
+            color:$color1;
+            font-weight: 600;
+            border: 1px solid transparent;
+            transition: all 0.2s ease;
+            &:hover{
+            color: black;
+            background-color: $color1;
+              box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            }
+      }
+    }
+  }

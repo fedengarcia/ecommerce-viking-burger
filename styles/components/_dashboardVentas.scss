@@ -1,0 +1,17 @@
+.dashboard-ventas{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;  
+    min-height: 100vh;
+
+    .ventas-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        max-height: auto;
+    }
+}

@@ -1,0 +1,96 @@
+@mixin desktop {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin screen_950 {
+  @media (max-width: 950px) {
+    @content;
+  }
+}
+
+@mixin screen_820 {
+  @media (max-width: 820px) {
+    @content;
+  }
+}
+
+@mixin screen_768 {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin screen_720 {
+  @media (max-width: 720px) {
+    @content;
+  }
+}
+
+@mixin screen_680 {
+  @media (max-width: 680px) {
+    @content;
+  }
+}
+
+@mixin screen_620 {
+  @media (max-width: 620px) {
+    @content;
+  }
+}
+
+@mixin screen_580 {
+  @media (max-width: 580px) {
+    @content;
+  }
+}
+
+@mixin screen_540 {
+  @media (max-width: 540px) {
+    @content;
+  }
+}
+
+@mixin screen_520 {
+  @media (max-width: 520px) {
+    @content;
+  }
+}
+
+@mixin screen_470 {
+  @media (max-width:470px) {
+    @content;
+  }
+}
+
+@mixin screen_450 {
+  @media (max-width: 450px) {
+    @content;
+  }
+}
+
+@mixin screen_400 {
+  @media (max-width: 400px) {
+    @content;
+  }
+}
+
+@mixin screen_380 {
+  @media (max-width: 380px) {
+    @content;
+  }
+}
+
+
+@mixin screen_350 {
+  @media (max-width: 350px) {
+    @content;
+  }
+}
+
+@mixin screen_320 {
+  @media (max-width: 320px) {
+    @content;
+  }
+}
