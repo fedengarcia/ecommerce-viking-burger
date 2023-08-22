@@ -4,12 +4,12 @@ import { collection, getDocs, where, query, limit, setDoc, addDoc, updateDoc, de
 import {getStorage, ref, uploadBytes, getDownloadURL, deleteObject} from "firebase/storage"
 
 const firebaseConfig = {
-  apiKey: process.env.API_KEY_FIREBASE,
-  authDomain: "vikingsburgers-df3f6.firebaseapp.com",
-  projectId: "vikingsburgers-df3f6",
-  storageBucket: "vikingsburgers-df3f6.appspot.com",
-  messagingSenderId: "661580127062",
-  appId: "1:661580127062:web:74722c571d9b4a3895d4f7"
+  apiKey: '',
+  authDomain: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: "",
+  appId: ""
 };
 
 const app = initializeApp(firebaseConfig);
